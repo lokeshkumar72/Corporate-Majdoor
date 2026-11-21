@@ -19,23 +19,21 @@ The project brings a fun combination of corporate life and relatable Indian humo
 
 ## 🛠️ Tech Stack
 
-| Technology        | Purpose                       |
-| ----------------- | ----------------------------- |
-| React.js          | Frontend development          |
-| JavaScript (ES6+) | Application logic             |
-| Vite              | Development and build tool    |
-| HTML5             | Website structure             |
-| CSS3              | Styling and responsive design |
-| Git & GitHub      | Version control               |
-| Vercel            | Deployment                    |
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend development |
+| JavaScript (ES6+) | Application logic |
+| Vite | Development and build tool |
+| HTML5 | Website structure |
+| CSS3 | Styling and responsive design |
+| Git & GitHub | Version control |
+| Vercel | Deployment |
 
 ## 📸 Screenshots
 
-```md
-## 📸 Screenshots
-
-![Corporate Majdoor Homepage](screenshots/homepage.png)
-```
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lokeshkumar72/Corporate-Majdoor/main/screenshots/homepage.png" alt="Corporate Majdoor Homepage" width="100%" />
+</p>
 
 ## 🚀 Getting Started
 
@@ -89,6 +87,9 @@ Corporate-Majdoor/
 │   ├── styles.css
 │   └── main.jsx
 │
+├── screenshots/
+│   └── homepage.png
+│
 ├── index.html
 ├── package.json
 ├── vite.config.js
@@ -98,7 +99,7 @@ Corporate-Majdoor/
 
 ## 🌐 Live Demo
 
-**Live Website:** https://corporate-majdoor-orcin.vercel.app/
+**Live Website:** [Corporate Majdoor](https://corporate-majdoor-orcin.vercel.app/)
 
 ## 📦 Repository
 
@@ -129,6 +130,6 @@ This project is open for learning and personal development. Add a license file i
 
 <p align="center">
   **Made with ❤️ and ☕ by Lokesh Kumar Singh**
-  
+
   *Corporate Life, Desi Style!*
 </p>
