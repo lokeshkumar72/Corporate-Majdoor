@@ -32,7 +32,9 @@ The project brings a fun combination of corporate life and relatable Indian humo
 ## 📸 Screenshots
 
 ```md
-[Corporate Majdoor Homepage](./screenshots/homepage.png)
+## 📸 Screenshots
+
+![Corporate Majdoor Homepage](screenshots/homepage.png)
 ```
 
 ## 🚀 Getting Started
