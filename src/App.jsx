@@ -45,7 +45,7 @@ export default function App() {
   const shouldPlay = useRef(false);
   const themeMenuRef = useRef(null);
   const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem("corporate-majdoor-theme");
+    const savedTheme = localStorage.getItem("corporate-majdoor-theme-v2");
     return savedTheme === "bartan" ? "bartan" : "corporate";
   });
   const [idx, setIdx] = useState(0);
@@ -65,7 +65,7 @@ export default function App() {
     audio.current.volume = vol / 100;
   }, [vol]);
   useEffect(() => {
-    localStorage.setItem("corporate-majdoor-theme", theme);
+    localStorage.setItem("corporate-majdoor-theme-v2", theme);
   }, [theme]);
   useEffect(() => {
     if (!themeMenuOpen) return undefined;
