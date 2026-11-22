@@ -226,6 +226,12 @@ export default function App() {
                 type="button"
                 role="menuitem"
                 className={theme === "corporate" ? "active" : ""}
+                onPointerDown={(event) => {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  setTheme("corporate");
+                  setThemeMenuOpen(false);
+                }}
                 onClick={() => {
                   setTheme("corporate");
                   setThemeMenuOpen(false);
@@ -238,6 +244,12 @@ export default function App() {
                 type="button"
                 role="menuitem"
                 className={theme === "bartan" ? "active" : ""}
+                onPointerDown={(event) => {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  setTheme("bartan");
+                  setThemeMenuOpen(false);
+                }}
                 onClick={() => {
                   setTheme("bartan");
                   setThemeMenuOpen(false);
