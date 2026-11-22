@@ -43,6 +43,7 @@ const BARTAN_NOTES = [
 export default function App() {
   const audio = useRef(null);
   const shouldPlay = useRef(false);
+  const themeMenuRef = useRef(null);
   const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem("corporate-majdoor-theme");
     return savedTheme === "bartan" ? "bartan" : "corporate";
@@ -58,6 +59,7 @@ export default function App() {
   const [daant, setDaant] = useState(0);
   const [bubbleParticles, setBubbleParticles] = useState([]);
   const [sparkleParticles, setSparkleParticles] = useState([]);
+  const [themeMenuOpen, setThemeMenuOpen] = useState(false);
 
   useEffect(() => {
     audio.current.volume = vol / 100;
@@ -65,6 +67,25 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem("corporate-majdoor-theme", theme);
   }, [theme]);
+  useEffect(() => {
+    if (!themeMenuOpen) return undefined;
+
+    const closeMenu = (event) => {
+      if (!themeMenuRef.current?.contains(event.target)) {
+        setThemeMenuOpen(false);
+      }
+    };
+    const closeOnEscape = (event) => {
+      if (event.key === "Escape") setThemeMenuOpen(false);
+    };
+
+    document.addEventListener("pointerdown", closeMenu);
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.removeEventListener("pointerdown", closeMenu);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [themeMenuOpen]);
   useEffect(() => {
     if (shouldPlay.current) audio.current.play().catch(() => {});
   }, [idx]);
@@ -182,19 +203,52 @@ export default function App() {
         >
           <img src="/logo.svg" alt="Corporate Majdoor" />
         </a>
-        <label className="theme-picker">
-          <span className="theme-picker-icon" aria-hidden="true">
-            {theme === "bartan" ? "🍳" : "💼"}
-          </span>
-          <select
-            value={theme}
-            onChange={(e) => setTheme(e.target.value)}
+        <div className="theme-picker" ref={themeMenuRef}>
+          <button
+            className="theme-picker-trigger"
+            type="button"
+            onClick={() => setThemeMenuOpen((open) => !open)}
             aria-label="Choose website theme"
+            aria-haspopup="menu"
+            aria-expanded={themeMenuOpen}
           >
-            <option value="corporate">Corporate Majdoor</option>
-            <option value="bartan">Bartan Time</option>
-          </select>
-        </label>
+            <span className="theme-picker-icon" aria-hidden="true">
+              {theme === "bartan" ? "🍳" : "💼"}
+            </span>
+            <span className="theme-picker-name">
+              {theme === "bartan" ? "Bartan Time" : "Corporate Majdoor"}
+            </span>
+            <span className="theme-picker-chevron" aria-hidden="true">⌄</span>
+          </button>
+          {themeMenuOpen && (
+            <div className="theme-menu" role="menu" aria-label="Website themes">
+              <button
+                type="button"
+                role="menuitem"
+                className={theme === "corporate" ? "active" : ""}
+                onClick={() => {
+                  setTheme("corporate");
+                  setThemeMenuOpen(false);
+                }}
+              >
+                <span aria-hidden="true">💼</span>
+                <span>Corporate Majdoor</span>
+              </button>
+              <button
+                type="button"
+                role="menuitem"
+                className={theme === "bartan" ? "active" : ""}
+                onClick={() => {
+                  setTheme("bartan");
+                  setThemeMenuOpen(false);
+                }}
+              >
+                <span aria-hidden="true">🍳</span>
+                <span>Bartan Time</span>
+              </button>
+            </div>
+          )}
+        </div>
         <nav>
           <a href="#about">About</a>
           <a href="#faq">FAQ</a>
