@@ -286,4 +286,160 @@ export const songs = [
     artist: " Alka Yagnik",
     src: "/songs/Gali Mein Chand Lyrical ｜ गली में चाँद ｜ Alka Yagnik ｜ Zakhm ｜ Ajay Devgan ｜ 90s Hindi Romantic Song.mp3",
   },
+  {
+    title: "Aaj Kehna Zaroori Hai",
+    artist: " Udit Narayan ｜ Alka Yagnik",
+    src: "/songs/Aaj Kehna Zaroori Hai ｜ Andaaz ｜ Akshay Kumar ｜ Lara Dutta ｜ Udit Narayan ｜ Alka Yagnik.mp3",
+  },
+  {
+    title: "Aaja Mahiya",
+    artist: " Alka Yagnik, Udit Narayan",
+    src: "/songs/Aaja Mahiya ｜ Fiza ｜ Hrithik Roshan, Neha ｜ Alka Yagnik, Udit Narayan ｜ Hindi Hits.mp3",
+  },
+  {
+    title: "Aaye Ho Meri Zindagi Mein",
+    artist: " Alka Yagnik",
+    src: "/songs/Aaye Ho Meri Zindagi Mein ｜ ALKA YAGNIK ｜ Raja Hindustani ｜ 1996.mp3",
+  },
+  {
+    title: "Agar Tum Saath Ho ",
+    artist: "Alka Yagnik , Arijit Singh",
+    src: "/songs/Agar Tum Saath Ho ｜ Tamasha ｜ Alka Yagnik Arijit Singh ｜ Lyrics Song.mp3",
+  },
+  {
+    title: "Aisa Deewana Hua Hai Ye Dil Aapke Pyar Mein ",
+    artist: "Sonu Nigam, AlkaYagnik",
+    src: "/songs/Aisa Deewana Hua Hai Ye Dil Aapke Pyar Mein Song ｜ Dil Maange More ｜ Sonu Nigam, AlkaYagnik ｜ 90's.mp3",
+  },
+  {
+    title: "Allah Kare Dil Na Lage ",
+    artist: " Sonu Nigam ｜ Alka Yagnik",
+    src: "/songs/Allah Kare Dil Na Lage (Official Full Video) ｜ Andaaz ｜ Akshay & Priyanka ｜ Sonu Nigam ｜ Alka Yagnik.mp3",
+  },
+  {
+    title: "Hum Nahin Tere Dushmano Mai",
+    artist: " Alka Yagnik",
+    src: "/songs/Hum Nahin (HD) Full Video Song ｜ Hungama ｜ Akshaye Khanna, Rimi Sen, Aftab Shivdasani ｜.mp3",
+  },
+
+  {
+    title: "Idhar Chala Main Udhar Chala",
+    artist: " Udit - Alka",
+    src: "/songs/Idhar Chala Main Udhar Chala Song इधर चला मै उधर चला ｜ Hrithik - Preity ｜ Udit - Alka ｜ Koi Mil Gaya.mp3",
+  },
+  {
+    title: "Kaho Naa Pyaar Hai",
+    artist: " Alka Yagnik & Udit Narayan",
+    src: "/songs/Kaho Naa Pyaar Hai - Title Track ｜ Hrithik Roshan & Ameesha Patel ｜ Alka Yagnik & Udit Narayan.mp3",
+  },
+  {
+    title: "Kitna Pagal Dil Hai 💓 Female Version Full Song ",
+    artist: " Alka Yagnik",
+    src: "/songs/Kitna Pagal Dil Hai 💓 Female Version Full Song ｜｜ Andaaz 💕 Jo Bhi Yaha Pyar Kare...................mp3",
+  },
+  {
+    title: "Kyaa Dil Ne Kahaa",
+    artist: "Udit Narayan,Alka Yagnik",
+    src: "/songs/Kyaa Dil Ne Kahaa Full Video - Title Song｜Tusshar Kapoor,Esha｜Udit Narayan,Alka Yagnik.mp3",
+  },
+  {
+    title: "Mere Mehboob Mere Sanam",
+    artist: " Udit N ｜ Alka Y ",
+    src: "/songs/Mere Mehboob Mere Sanam with lyrics ｜ Shah Rukh Khan ｜ Sonali Bendre ｜ Udit N ｜ Alka Y ｜ Duplicate.mp3",
+  },
+  {
+    title: "Raah Mein Unse Mulaqat ",
+    artist: " Kumar Sanu, Alka Yagnik ｜ Anu Malik ",
+    src: "/songs/Raah Mein Unse Mulaqat ｜ Vijaypath ｜ Ajay Devgn, Tabu ｜ Kumar Sanu, Alka Yagnik ｜ Anu Malik ｜ 90's.mp3",
+  },
+  {
+    title: "Rab Kare Tujhko Bhi Pyaar Ho Jaaye ",
+    artist: " Alka Yagnik, Udit Narayan",
+    src: "/songs/Rab Kare Tujhko Bhi Pyaar Ho Jaaye Full Song With Lyrics By Alka Yagnik, Udit Narayan.mp3",
+  },
+  {
+    title: " Dilbar Dilbar ",
+    artist: "Alka Yagnik",
+    src: "/songs/Shushmita Sen： Dilbar Dilbar HD Video Song ｜ Alka Yagnik ｜ T-Series Songs.mp3",
+  },
+  {
+    title: "Sona Chandi Kya Karenge Pyaar Mein ",
+    artist: " Alka Yagnik",
+    src: "/songs/Sona Chandi Kya Karenge Pyaar Mein (Full Mp3 Songs) - By Alka.mp3",
+  },
+  {
+    title: "Tera Dil Mere Paas Rehne De",
+    artist: "Udit N. & Alka Y.",
+    src: "/songs/Tera Dil Mere Paas Rehne De -4K Video ｜ Hungama ｜ Rimi  & Aftab S ｜ Udit N. & Alka Y. ｜ 90's hits",
+  },
+  {
+    title: "Tip Tip Barsa Paani ",
+    artist: "Alka & Udit ",
+    src: "/songs/Tip Tip Barsa Paani - LYRICAL ｜ #AkshayKumar & #RaveenaTandon ｜ Mohra ｜ Alka & Udit ｜ 90's Love Song.mp3",
+  },
+  {
+    title: "Tu Shayar Hai Main Teri Shayari ",
+    artist: " Alka Yagnik",
+    src: "/songs/Tu Shayar Hai Main Teri Shayari - Lyrical ｜ Madhuri Dixit ｜ Saajan ｜ 90's Songs ｜ Alka Yagnik.mp3",
+  },
+  {
+    title: "Tum Mile Dil Khile ",
+    artist: " Alka Yagnik",
+    src: "/songs/Tum Mile Dil Khile HD Video Song ｜ Criminal Songs ｜ Akkineni Nagarjuna, Manisha Koirala ｜ Kumar Sanu.mp3",
+  },
+  {
+    title: "Tune Zindagi Mein(Female Version)",
+    artist: " Alka Yagnik",
+    src: "/songs/Tune Zindagi Mein (Lyrics) Alka Yagnik (Female Version).mp3",
+  },
+  {
+    title: "Woh Ladki Bohot Yaad Aati Hai ",
+    artist: "Kumar Sanu & Alka Yagnik",
+    src: "/songs/Woh Ladki Bohot Yaad Aati Hai ｜ Duet Lyrical ｜ Kumar Sanu & Alka Yagnik ｜ Qayamat ｜.mp3",
+  },
+  {
+    title: "Woh Tassavur Ka Aalam  ",
+    artist: "Udit & Alka",
+    src: "/songs/Woh Tassavur Ka Aalam ｜ Woh Pyaar Pyaar Pyaar ｜ Udit & Alka ｜ Aitraaz ｜ Bollywood Hit Song.mp3",
+  },
+  {
+    title: "Abhi Saans Lene Ki Fursat Nahin",
+    artist: "Sonu Nigam, Alka Yagnik",
+    src: "/songs/Abhi Saans Lene Ki Fursat Nahin - Full HD ｜ Salman Khan, Karisma ｜ Sonu Nigam, Alka Yagnik ｜ Jeet.mp3",
+  },
+  {
+    title: "Tu Dharti Pe Chaahe Jahan Bhi Rahegi ",
+    artist: " Kumar Sanu, Alka Yagnik",
+    src: "/songs/Tu Dharti Pe Chaahe Jahan Bhi Rahegi - Jeet ｜ Karisma, Sunny Deol ｜ Kumar Sanu, Alka Yagnik.mp3",
+  },
+  {
+    title: "Tumse Milne Ko Dil Karta Hai ❤️🎶",
+    artist: "Kumar Sanu, Alka Yagnik",
+    src: "/songs/Tumse Milne Ko Dil Karta Hai ❤️🎶 ｜ Phool Aur Kaante ｜ Ajay Devgn & Madhoo ｜ Kumar Sanu, Alka Yagnik.mp3",
+  },
+  {
+    title: "Dil Kehta Hai",
+    artist: "Kumar Sanu, Alka Yagnik",
+    src: "/songs/Dil Kehta Hai ｜ Akele Hum Akele Tum ｜ Kumar Sanu, Alka Yagnik ｜ Aamir Khan ｜ 90s Love Song.mp3",
+  },
+  {
+    title: "Ladki Kyon ",
+    artist: " Alka Yagnik, Shaan ",
+    src: "/songs/Ladki Kyon ｜ Full Song ｜ Hum Tum ｜ Saif Ali Khan, Rani Mukerji ｜ Alka Yagnik, Shaan ｜ Jatin-Lalit.mp3",
+  },
+  {
+    title: "Ladki Badi Anjani Hai",
+    artist: " Kumar Sanu ｜ Alka Yagnik",
+    src: "/songs/Ladki Badi Anjani Hai ： Kuch Kuch Hota Hai ｜ Shah Rukh Khan, Kajol ｜ Kumar Sanu ｜ Alka Yagnik ｜ 4K.mp3",
+  },
+  {
+    title: "Chal Pyar Karegi",
+    artist: "Sonu Nigam ｜ Alka Yagnik ",
+    src: "/songs/Chal Pyar Karegi ｜ Sonu Nigam ｜ Alka Yagnik ｜ Jab Pyar Kisise Hota Hai ｜ 1998.mp3",
+  },
+  {
+    title: "Taal Se Taal Mila",
+    artist: " A.R Rahman ｜ Alka Yagnik ｜ Udit Narayan ",
+    src: "/songs/Taal Se Taal Mila ｜ A.R Rahman ｜ Alka Yagnik ｜ Udit Narayan ｜ Taal (1999).mp3",
+  },
 ];
