@@ -370,7 +370,7 @@ export const songs = [
   {
     title: "Tera Dil Mere Paas Rehne De",
     artist: "Udit N. & Alka Y.",
-    src: "/songs/Tera Dil Mere Paas Rehne De -4K Video ｜ Hungama ｜ Rimi  & Aftab S ｜ Udit N. & Alka Y. ｜ 90's hits",
+    src: "/songs/Tera Dil Mere Paas Rehne De -4K Video ｜ Hungama ｜ Rimi  & Aftab S ｜ Udit N. & Alka Y. ｜ 90's hits.mp3",
   },
   {
     title: "Tip Tip Barsa Paani ",
