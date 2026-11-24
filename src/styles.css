@@ -44,6 +44,35 @@ header{position:relative;z-index:50}
 .theme-bartan .bar,.theme-bartan .list,.theme-bartan .site-footer .info{background:#3f241bdd;border-color:#ffe1a64d}
 .theme-bartan input[type=range]{accent-color:#c74d37}
 .theme-bartan .play,.theme-bartan .list .on{background:#c74d37}
+.haryanvi-background{position:fixed;inset:0;z-index:0;overflow:hidden;background:#24140b;pointer-events:none}
+.haryanvi-background img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 38%;filter:saturate(1.08) contrast(1.04)}
+.haryanvi-background-mobile{display:none}
+.haryanvi-background-desktop{display:block}
+.theme-haryanvi{--amber-350:#f5a524;background-image:none;background-color:#241a0e;color:#fff4db;font-family:"Space Grotesk",sans-serif}
+.theme-haryanvi .shade{background:linear-gradient(90deg,#1d120bcc 0%,#1d120b33 55%,#1d120b66 100%)!important}
+.haryanvi-background-gradient{position:fixed;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to top,#100904dd 0%,transparent 54%,#10090466 100%)}
+.grain-overlay{position:fixed;inset:0;z-index:1;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");mix-blend-mode:overlay}
+.theme-haryanvi .font-hindi,.theme-haryanvi .font-display{font-family:"Rozha One",serif}
+.theme-haryanvi .font-elegant{font-family:"Playfair Display",serif}
+.theme-haryanvi .quote-fade{transition:opacity .5s ease}
+.theme-haryanvi h1{font-family:"Rozha One",serif;color:#ffe08a;text-shadow:0 5px 22px #241008}
+.theme-haryanvi .haryanvi-title-prefix{color:#fff}
+.theme-haryanvi .hero p{color:#fff0c1}
+.theme-haryanvi .theme-picker{background:linear-gradient(135deg,#51300ccc,#241409cc);border-color:#ffe08a66}
+.theme-haryanvi .theme-picker:hover{border-color:#ffe08aaa;box-shadow:0 11px 28px #0007,0 0 18px #ffb83044}
+.theme-haryanvi .theme-picker-icon{background:linear-gradient(135deg,#ffe08a,#ee8733);box-shadow:0 4px 12px #ee87334d}
+.theme-haryanvi .theme-menu{background:rgba(38,23,12,.96);border-color:#ffe08a4d}
+.theme-haryanvi .theme-menu button:hover,.theme-haryanvi .theme-menu button.active{background:rgba(255,176,48,.2)!important}
+.theme-haryanvi .bar,.theme-haryanvi .list,.theme-haryanvi .site-footer .info{background:#28190ddd;border-color:#ffe08a4d}
+.theme-haryanvi input[type=range]{accent-color:#ffb830}
+.theme-haryanvi .play,.theme-haryanvi .list .on{background:#dc6a27}
+.theme-haryanvi .site-footer .info{background:linear-gradient(145deg,#28190dbb,#100904bb)!important}
+.theme-haryanvi .grid>div{background:rgba(255,255,255,.07)!important}
+.theme-haryanvi .grid h4{color:#ffe08a}
+.theme-haryanvi .credit{border-color:#ffe08a55;color:#ffe0a6}
+.haryanvi-quote-wrap{position:relative;z-index:2;display:flex;justify-content:center;width:100%;margin:0 auto 4px;padding:0 12px;pointer-events:none}
+.haryanvi-rotating-quote{display:flex;align-items:center;justify-content:center;width:fit-content;max-width:min(92vw,512px);min-height:2.2em;padding:6px 16px;border:1px solid rgba(245,165,36,.3);border-radius:9999px;background:rgba(0,0,0,.6);box-shadow:0 4px 20px rgba(0,0,0,.7);backdrop-filter:blur(12px);color:#fde68a;text-align:center;font-size:clamp(12px,1.3vw,16px);line-height:1.375}
+.haryanvi-rotating-quote.is-hidden{opacity:0}
 .shade{background:linear-gradient(#0005,#0002 40%,#0006)!important}
 .theme-bartan .shade{background:linear-gradient(90deg,#32180e66 0%,#32180e12 55%,#32180e33 100%)!important}
 button{background:rgba(255,255,255,.1)}
@@ -96,19 +125,23 @@ h1{font-family:Caveat,cursive;font-size:clamp(52px,10vw,110px);text-shadow:0 4px
 .list{position:fixed!important;right:16px;bottom:100px;width:320px;max-height:50vh;overflow:auto;background:#000c;padding:14px;border-radius:14px;display:flex;flex-direction:column;gap:6px}
 .list-header{display:flex;align-items:center;justify-content:space-between}
 .close-list{padding:4px 10px}
+.empty-playlist{padding:8px 4px;color:#ffffffb3;font-size:13px;line-height:1.6}
 .list button{text-align:left;border-radius:8px}.list .on{background:#ff8a5c}
 .bar{position:relative!important;left:auto;bottom:auto;transform:none;z-index:12;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"track controls" "seek seek";align-items:center;gap:12px 16px;width:min(calc(100% - 40px),1080px);margin:72px auto 32px;padding:14px 22px;background:#140d0b88;backdrop-filter:blur(8px);border:1px solid #ffffff24;border-radius:18px}
+.theme-haryanvi .bar{margin-top:16px}
 .bar,.hero h1{animation:subtleReveal .55s ease-out both}
 .bar{animation-delay:.12s}
 @keyframes subtleReveal{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
 .theme-picker select{transition:background .2s ease,color .2s ease}
 .transport-controls button,.volume-control button{transition:transform .18s ease,background .18s ease}
 .transport-controls button:hover,.volume-control button:hover{transform:translateY(-1px)}
+.transport-controls button:disabled{cursor:not-allowed;opacity:.45}
 .np{grid-area:track;min-width:0;display:flex;flex-direction:column;overflow:hidden}.np b{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}.np small{opacity:.6}
 .ctl{grid-area:controls;display:flex;align-items:center;gap:12px}.volume-control,.transport-controls{display:flex;align-items:center;gap:8px}.volume-control{flex:none}.transport-controls{flex:none}.play{background:#ff8a5c;width:46px;height:46px;padding:0;font-size:18px}
 .site-footer{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,2fr) minmax(260px,1fr);gap:20px;max-width:1120px;margin:40px auto 20px;padding:0 20px}
 .theme-bartan .site-footer{margin-top:clamp(260px,48vh,520px)}
 .theme-corporate .site-footer{margin-top:clamp(260px,48vh,520px)}
+.theme-haryanvi .site-footer{margin-top:clamp(260px,48vh,520px)}
 .site-footer .info{max-width:none;margin:0;width:100%;background:linear-gradient(145deg,#24160ee8,#0d0909e8);border:1px solid #ffffff24;box-shadow:0 16px 40px #0006;backdrop-filter:blur(14px)}
 .credit{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:8px;text-align:center;padding:18px 0 8px;border-top:1px solid #ffb07855;color:#ffd2af;font-size:13px;letter-spacing:.04em}
 .instagram-link{display:inline-flex;color:inherit;transition:color .2s ease,transform .2s ease}
@@ -129,6 +162,13 @@ code{background:#fff2;padding:2px 6px;border-radius:4px}
   .bartan-background-mobile{display:block}
   .bartan-background-desktop{display:none}
   .bartan-background img{object-position:center top}
+  .theme-haryanvi.app{background-image:none}
+  .theme-haryanvi .hero{padding-bottom:300px}
+  .theme-haryanvi .haryanvi-quote-wrap{margin-top:24px}
+  .theme-haryanvi .haryanvi-rotating-quote{font-size:18px;line-height:1.5;padding:10px 16px}
+  .haryanvi-background-mobile{display:block}
+  .haryanvi-background-desktop{display:none}
+  .haryanvi-background img{object-position:center top}
   header{padding:12px}
   .brand{width:44px;height:44px}
   .theme-picker{height:38px;gap:4px;padding:4px}
@@ -159,6 +199,8 @@ code{background:#fff2;padding:2px 6px;border-radius:4px}
   .theme-bartan .site-footer .grid>div{background:#fff1;border-color:#ffe1a64d}
   .theme-bartan .site-footer{margin-top:42vh}
   .theme-corporate .site-footer{margin-top:42vh}
+  .theme-haryanvi .site-footer{margin-top:42vh}
+  .theme-haryanvi .bar{margin-top:76px}
   .footer-faq{scroll-margin-top:20px}
   .sticky{right:10px;width:240px}
 }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { songs } from "./songs.js";
+import { haryanviSongs } from "./haryanvi bangers.js";
 
 const fmt = (s) =>
   `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
@@ -39,7 +40,53 @@ const BARTAN_NOTES = [
   "Paani ka level perfect set karo",
   "Ek plate, ek khwaab",
 ];
+const QUOTES = [
+  // DJ ATTITUDE & DESI SWAG
+  { hi: "छोरे का नाम सुनते ही, गाम में सन्नाटा छा ज्या सै!", en: "One name, and the entire village goes silent." },
+  { hi: "भौकाल ऐसा काटो छोरे, धूल भी सलाम ठोके!", en: "Make such an impact that even dust salutes." },
+  { hi: "हमसे अकड़ के ना बोलिए, लहजा बदल देंगे!", en: "Don't test our attitude." },
+  { hi: "छोरा पश्चिम यूपी का, ठाठ पूरे नवाबां आले!", en: "West UP boy, royal attitude." },
+  { hi: "गाम छोटा हो सके सै, पर छोरे का रौला ना!", en: "Small village, massive reputation." },
+  { hi: "जिगरा चाहिए छोरे, सिर्फ मूंछ रखने से दबंग ना बनते!", en: "Being a legend takes guts." },
 
+  // GHAZIABAD / MEERUT STYLE RAULA
+  { hi: "मेरठ की धरती सै भाई, बातां में भी बारूद सै!", en: "Meerut attitude, explosive words." },
+  { hi: "रौला ऐसा सै अपना, DJ भी आवाज बढ़ा दे!", en: "Even the DJ turns up the volume." },
+  { hi: "छोरे की एंट्री होवे, तो भीड़ अपने आप हट ज्या सै!", en: "The crowd makes way automatically." },
+  { hi: "ना कोई दिखावा, ना कोई शोर, अपना नाम ही काफी सै छोरे!", en: "No show-off, the name says it all." },
+  { hi: "गाम के छोरे सैं, दिल में प्यार और आंखां में अंगार!", en: "Village boys, loving hearts and fiery eyes." },
+  { hi: "जहां खड़े हो जावें, वहीं माहौल बन ज्या सै!", en: "Where we stand, the party begins." },
+
+  // DESI ROMANCE & CHHORI
+  { hi: "छोरी तेरी चाल पे तो पूरा गाम फिदा हो रया सै!", en: "The whole village is crushing on your walk." },
+  { hi: "तेरी पायल की छन-छन, DJ की बीट पे भारी पड़गी!", en: "Your anklets beat the DJ bass." },
+  { hi: "घूंघट उठा के देख छोरी, छोरा दिल हार बैठ्या!", en: "Lift the veil, he's already lost his heart." },
+  { hi: "छोरी आंख मार गई, छोरे की अकड़ उतर गई!", en: "One wink and his attitude disappeared." },
+  { hi: "तेरे नखरे हजार छोरी, पर छोरा भी कम ना सै!", en: "A thousand tantrums, but he's no less." },
+  { hi: "गोरी तेरी कमर लचकती, DJ की बीट धड़कती!", en: "Your moves make the bassline pulse." },
+
+  // FUNNY & DOUBLE-MEANING DJ DIALOGUES
+  { hi: "खाट पे बैठ्या छोरा, सपना देखे रानी का!", en: "Village boy dreaming of royalty." },
+  { hi: "छोरी बोली धीरे नाच, छोरा बोल्या DJ और तेज कर!", en: "She says slow down, he says turn it up." },
+  { hi: "लुगाई का गुस्सा और DJ का बेस, दोनों सीधे दिल पे लागें!", en: "Her anger and the DJ bass hit hard." },
+  { hi: "ब्याह में आया था खाना खाणे, अब ठुमके मार रया सै!", en: "Came for the food, stayed for the dance." },
+  { hi: "चाचा ने पी ली लस्सी, अब नाचेंगे पूरी बस्ती!", en: "Uncle had his lassi, now the whole village dances." },
+  { hi: "घणी ठंड सै भाई, पर छोरे का डांस गरम सै!", en: "Cold weather, hot dance moves." },
+
+  // GAAM KA DABANGG
+  { hi: "खानदानी ठाठ सैं छोरे, किराये का भौकाल ना!", en: "Inherited class, not rented swagger." },
+  { hi: "अपना गाम, अपनी माटी, अपना अलग ही रौला!", en: "Our village, our soil, our identity." },
+  { hi: "पगड़ी का मान राखें, जुबान का वजन राखें!", en: "Respect the turban, honor your word." },
+  { hi: "बोलचाल देसी सै, पर अंदाज नवाबी सै!", en: "Desi language, royal style." },
+  { hi: "नाम ना पूछ छोरे का, गाम बता देगा!", en: "The village itself knows the name." },
+  { hi: "पश्चिम यूपी के छोरे, जहां खड़े हों वहीं मेला लग ज्या सै!", en: "West UP boys turn every place into a fair." },
+];
+const HARYANVI_NOTES = [
+  "Beat drop hote hi energy double",
+  "Desi swag, no skip",
+  "Bass up, stress down",
+  "Kaam bhi chale, banger bhi",
+];
 export default function App() {
   const audio = useRef(null);
   const shouldPlay = useRef(false);
@@ -54,6 +101,8 @@ export default function App() {
   const [panel, setPanel] = useState(null); // list | notes | daant
   const [fake, setFake] = useState(false);
   const [daant, setDaant] = useState(0);
+  const [quoteIndex, setQuoteIndex] = useState(0);
+  const [quoteVisible, setQuoteVisible] = useState(true);
   const [bubbleParticles, setBubbleParticles] = useState([]);
   const [sparkleParticles, setSparkleParticles] = useState([]);
   const [themeMenuOpen, setThemeMenuOpen] = useState(false);
@@ -84,6 +133,14 @@ export default function App() {
     if (shouldPlay.current) audio.current.play().catch(() => {});
   }, [idx]);
   useEffect(() => {
+    shouldPlay.current = false;
+    audio.current.pause();
+    setIdx(0);
+    setPos(0);
+    setDur(0);
+    setPlaying(false);
+  }, [theme]);
+  useEffect(() => {
     if (theme !== "bartan") return undefined;
 
     const quoteTimer = window.setInterval(() => {
@@ -91,6 +148,24 @@ export default function App() {
     }, 8000);
 
     return () => window.clearInterval(quoteTimer);
+  }, [theme]);
+  useEffect(() => {
+    if (theme !== "haryanvi") return undefined;
+
+    setQuoteVisible(true);
+    let fadeTimeout;
+    const quoteTimer = window.setInterval(() => {
+      setQuoteVisible(false);
+      fadeTimeout = window.setTimeout(() => {
+        setQuoteIndex((current) => (current + 1) % QUOTES.length);
+        setQuoteVisible(true);
+      }, 500);
+    }, 4000);
+
+    return () => {
+      window.clearInterval(quoteTimer);
+      window.clearTimeout(fadeTimeout);
+    };
   }, [theme]);
   useEffect(() => {
     if (theme !== "bartan") return;
@@ -114,24 +189,41 @@ export default function App() {
     );
   }, [theme]);
 
+  const activeSongs = theme === "haryanvi" ? haryanviSongs : songs;
+  const currentSong = activeSongs[idx] ?? null;
+  const nextSong =
+    activeSongs.length > 1
+      ? activeSongs[(idx + 1) % activeSongs.length]
+      : null;
   const go = (i) => {
+    if (activeSongs.length === 0) return;
     shouldPlay.current = true;
-    setIdx((i + songs.length) % songs.length);
+    const nextIndex = (i + activeSongs.length) % activeSongs.length;
+    if (nextIndex === idx) {
+      audio.current.currentTime = 0;
+      setPos(0);
+      audio.current.play().catch(() => {});
+      return;
+    }
+    setPos(0);
+    setDur(0);
+    setIdx(nextIndex);
   };
   const toggle = () => {
+    if (!currentSong) return;
     const a = audio.current;
     if (a.paused) {
       shouldPlay.current = true;
       a.play().catch(() => {});
     } else a.pause();
   };
-  const title = (i) => songs[i].title;
+  const title = (i) => activeSongs[i]?.title ?? "No songs added yet";
 
   return (
     <div className={`app theme-${theme}`}>
       <audio
         ref={audio}
-        src={songs[idx].src}
+        src={currentSong?.src}
         preload="auto"
         muted={muted}
         onPlay={() => setPlaying(true)}
@@ -140,6 +232,7 @@ export default function App() {
         onLoadedMetadata={(e) => setDur(e.target.duration)}
         onEnded={() => go(idx + 1)}
       />
+      {nextSong && <audio src={nextSong.src} preload="auto" aria-hidden="true" />}
       <div className="shade" />
       {theme === "bartan" && (
         <>
@@ -188,12 +281,36 @@ export default function App() {
           <div className="bartan-background-gradient" aria-hidden="true" />
         </>
       )}
+      {theme === "haryanvi" && (
+        <>
+          <div className="haryanvi-background" aria-hidden="true">
+            <img
+              className="haryanvi-background-mobile"
+              src="/haryanvi-mobile.png"
+              alt=""
+            />
+            <img
+              className="haryanvi-background-desktop"
+              src="/haryanvi-desktop.png"
+              alt=""
+            />
+          </div>
+          <div className="haryanvi-background-gradient" aria-hidden="true" />
+          <div className="grain-overlay" aria-hidden="true" />
+        </>
+      )}
 
       <header>
         <a
           className="brand"
           href="/"
-          aria-label={theme === "bartan" ? "Bartan Time home" : "Corporate Majdoor home"}
+          aria-label={
+            theme === "bartan"
+              ? "Bartan Time home"
+              : theme === "haryanvi"
+                ? "Haryanvi Banger home"
+                : "Corporate Majdoor home"
+          }
         >
           <img src="/logo.svg" alt="Corporate Majdoor" />
         </a>
@@ -207,10 +324,14 @@ export default function App() {
             aria-expanded={themeMenuOpen}
           >
             <span className="theme-picker-icon" aria-hidden="true">
-              {theme === "bartan" ? "🍳" : "💼"}
+              {theme === "bartan" ? "🍳" : theme === "haryanvi" ? "🐃" : "💼"}
             </span>
             <span className="theme-picker-name">
-              {theme === "bartan" ? "Bartan Time" : "Corporate Majdoor"}
+              {theme === "bartan"
+                ? "Bartan Time"
+                : theme === "haryanvi"
+                  ? "Haryanvi Banger"
+                  : "Corporate Majdoor"}
             </span>
             <span className="theme-picker-chevron" aria-hidden="true">⌄</span>
           </button>
@@ -252,6 +373,24 @@ export default function App() {
                 <span aria-hidden="true">🍳</span>
                 <span>Bartan Time</span>
               </button>
+              <button
+                type="button"
+                role="menuitem"
+                className={theme === "haryanvi" ? "active" : ""}
+                onPointerDown={(event) => {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  setTheme("haryanvi");
+                  setThemeMenuOpen(false);
+                }}
+                onClick={() => {
+                  setTheme("haryanvi");
+                  setThemeMenuOpen(false);
+                }}
+              >
+                <span aria-hidden="true">🐃</span>
+                <span>Haryanvi Banger</span>
+              </button>
             </div>
           )}
         </div>
@@ -262,10 +401,20 @@ export default function App() {
       </header>
 
       <main className="hero">
-        <h1>{theme === "bartan" ? "बर्तन TIME" : "Corporate Majdoor"}</h1>
-        {theme !== "bartan" && (
+        <h1>
+          {theme === "bartan"
+            ? "बर्तन TIME"
+            : theme === "haryanvi"
+              ? (
+                <>
+                  <span className="haryanvi-title-prefix">हरियाणवी</span> Bangers
+                </>
+              )
+              : "Corporate Majdoor"}
+        </h1>
+        {theme === "haryanvi" ? null : theme !== "bartan" ? (
           <p>9 to 5 ki Majdoori • Overtime Playlist</p>
-        )}
+        ) : null}
         {theme === "bartan" ? (
           <button
             type="button"
@@ -280,7 +429,7 @@ export default function App() {
               — {BARTAN_SPEAKERS[daant]}
             </span>
           </button>
-        ) : (
+        ) : theme === "haryanvi" ? null : (
           <div className="chips">
             <button
               onClick={() => {
@@ -300,10 +449,28 @@ export default function App() {
         )}
       </main>
 
+      {theme === "haryanvi" && (
+        <div className="haryanvi-quote-wrap">
+          <p
+            id="haryanviQuote"
+            className={`haryanvi-rotating-quote font-hindi quote-fade${quoteVisible ? "" : " is-hidden"}`}
+            lang="hi"
+            aria-label="Rotating Haryanvi quote"
+          >
+            {QUOTES[quoteIndex].hi}
+          </p>
+        </div>
+      )}
+
       <footer className="bar">
         <div className="np">
           <b>{title(idx)}</b>
-          <small>{songs[idx].artist}</small>
+          <small>
+            {currentSong?.artist ??
+              (theme === "haryanvi"
+                ? "Add tracks to src/haryanvi bangers.js"
+                : "")}
+          </small>
         </div>
         <div className="ctl">
           <div className="volume-control">
@@ -328,11 +495,11 @@ export default function App() {
             </output>
           </div>
           <div className="transport-controls">
-            <button onClick={() => go(idx - 1)}>⏮</button>
-            <button className="play" onClick={toggle}>
+            <button onClick={() => go(idx - 1)} disabled={!currentSong}>⏮</button>
+            <button className="play" onClick={toggle} disabled={!currentSong}>
               {playing ? "⏸" : "▶"}
             </button>
-            <button onClick={() => go(idx + 1)}>⏭</button>
+            <button onClick={() => go(idx + 1)} disabled={!currentSong}>⏭</button>
             <button
               onClick={() => setPanel(panel === "list" ? null : "list")}
               aria-label={panel === "list" ? "Close playlist" : "Open playlist"}
@@ -348,6 +515,7 @@ export default function App() {
             min="0"
             max={dur || 1}
             value={pos}
+            disabled={!currentSong}
             onChange={(e) => (audio.current.currentTime = +e.target.value)}
           />
           <span>{fmt(dur)}</span>
@@ -356,9 +524,20 @@ export default function App() {
 
       {panel === "notes" && (
         <aside className="sticky">
-          <h3>{theme === "bartan" ? "Chore Notes 🫧" : "Meeting Notes ✍️"}</h3>
+          <h3>
+            {theme === "bartan"
+              ? "Chore Notes 🫧"
+              : theme === "haryanvi"
+                ? "Banger Notes 🎧"
+                : "Meeting Notes ✍️"}
+          </h3>
           <ol>
-            {(theme === "bartan" ? BARTAN_NOTES : NOTES).map((n) => (
+            {(theme === "bartan"
+              ? BARTAN_NOTES
+              : theme === "haryanvi"
+                ? HARYANVI_NOTES
+                : NOTES
+            ).map((n) => (
               <li key={n}>{n}</li>
             ))}
           </ol>
@@ -368,12 +547,29 @@ export default function App() {
       {panel === "daant" && (
         <div className="modal">
           <div className="card">
-            <h3>{theme === "bartan" ? "🫧 Ghar Ki Baat" : "🚨 MANAGER ESCALATION"}</h3>
-            <p>
-              “{(theme === "bartan" ? BARTAN_DIALOGUES : DAANT)[daant]}”
-            </p>
+            <h3>
+              {theme === "bartan"
+                ? "🫧 Ghar Ki Baat"
+                : theme === "haryanvi"
+                  ? "🤠 Desi Quote"
+                  : "🚨 MANAGER ESCALATION"}
+            </h3>
+            {theme === "haryanvi" ? (
+              <>
+                <p lang="hi">{QUOTES[daant].hi}</p>
+                <p lang="en">{QUOTES[daant].en}</p>
+              </>
+            ) : (
+              <p>
+                “{(theme === "bartan" ? BARTAN_DIALOGUES : DAANT)[daant]}”
+              </p>
+            )}
             <button onClick={() => setPanel(null)}>
-              {theme === "bartan" ? "Abhi dho raha hoon! 🫧" : "Working on it Sir! 🙏"}
+              {theme === "bartan"
+                ? "Abhi dho raha hoon! 🫧"
+                : theme === "haryanvi"
+                  ? "Yo hui na baat! 🤠"
+                  : "Working on it Sir! 🙏"}
             </button>
           </div>
         </div>
@@ -390,7 +586,13 @@ export default function App() {
               ✕
             </button>
           </div>
-          {songs.map((s, i) => (
+          {activeSongs.length === 0 ? (
+            <p className="empty-playlist">
+              No Haryanvi tracks yet. Add MP3s to{" "}
+              <code>public/Haryanvi bangers</code> and register them in{" "}
+              <code>src/haryanvi bangers.js</code>.
+            </p>
+          ) : activeSongs.map((s, i) => (
             <button
               key={s.src}
               className={i === idx ? "on" : ""}
@@ -431,6 +633,29 @@ export default function App() {
                 </div>
               </div>
             </>
+          ) : theme === "haryanvi" ? (
+            <>
+              <h2>Welcome to Haryanvi Banger</h2>
+              <p>
+                Turn up the desi energy with a bold Haryanvi-inspired look for
+                your music player. Pick a track, press play, and bring some
+                full-volume swagger to the workday.
+              </p>
+              <div className="grid">
+                <div>
+                  <h4>🎧 Desi Energy</h4>
+                  <p>A punchy, high-energy visual theme for your listening sessions.</p>
+                </div>
+                <div>
+                  <h4>🤠 Desi Quotes</h4>
+                  <p>Haryanvi lines rotate above the player to keep the mood lively.</p>
+                </div>
+                <div>
+                  <h4>🏢 Free & No Login</h4>
+                  <p>Open the tab and let the playlist play.</p>
+                </div>
+              </div>
+            </>
           ) : (
             <>
               <h2>Welcome to Corporate Majdoor</h2>
@@ -458,6 +683,12 @@ export default function App() {
               <p><b>What is Bartan Time?</b> A cozy, golden-hour nostalgia radio for the dishes.</p>
               <p><b>Is Bartan Time free?</b> Yes — free in your browser, with no sign-up.</p>
               <p><b>What kind of music plays?</b> A curated nostalgic playlist of familiar songs.</p>
+            </>
+          ) : theme === "haryanvi" ? (
+            <>
+              <p><b>What is Haryanvi Banger?</b> A bold, Haryanvi-inspired theme for the music player.</p>
+              <p><b>Is it free?</b> Yes — free in your browser, with no sign-up.</p>
+              <p><b>Can I pick a track?</b> Yes, open the playlist using the list button.</p>
             </>
           ) : (
             <>
@@ -511,6 +742,13 @@ Move: plate --scrub--> shine
 Mood: golden-hour-soft
 
 [TERMINAL] Chore progress 98.4%... jaldi finish karo!`
+            : theme === "haryanvi"
+              ? `HaryanviBanger: LIVE
+DesiMode: full-volume
+Energy: HIGH
+Mood: "Bass thoda aur tez kar!"
+
+[TERMINAL] Desi beats incoming... click to exit`
             : `public class PaymentGatewayService implements HighPriorityService {
   private volatile boolean isOvertimeActive = true;
 
