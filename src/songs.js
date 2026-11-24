@@ -373,11 +373,6 @@ export const songs = [
     src: "/songs/Tera Dil Mere Paas Rehne De -4K Video ｜ Hungama ｜ Rimi  & Aftab S ｜ Udit N. & Alka Y. ｜ 90's hits.mp3",
   },
   {
-    title: "Tip Tip Barsa Paani ",
-    artist: "Alka & Udit ",
-    src: "/songs/Tip Tip Barsa Paani - LYRICAL ｜ #AkshayKumar & #RaveenaTandon ｜ Mohra ｜ Alka & Udit ｜ 90's Love Song.mp3",
-  },
-  {
     title: "Tu Shayar Hai Main Teri Shayari ",
     artist: " Alka Yagnik",
     src: "/songs/Tu Shayar Hai Main Teri Shayari - Lyrical ｜ Madhuri Dixit ｜ Saajan ｜ 90's Songs ｜ Alka Yagnik.mp3",
