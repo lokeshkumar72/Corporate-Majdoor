@@ -79,4 +79,103 @@ export const haryanviSongs = [
       "ओल्हा में पटोला Olha Song हाय हाय मरजाणी Ajay Hooda ｜ Masoom Sharma ｜ Pooja Hooda ｜ Haryanvi DJ Song.mp3",
     ),
   },
+  {
+    title: "Albele Tange Wale",
+    artist: "Rahul Baliyan",
+    src: songPath(
+      "ALBELE TANGE WALE ｜ LAMBA HAI MADAM LAMBA ｜ RAHUL BALIYAN ｜ KMC FILMS.mp3",
+    ),
+  },
+  {
+    title: "Badli Badli Laage",
+    artist: "Sapna Chaudhary & Vicky Kajla",
+    src: songPath(
+      "Badli Badli Laage ｜ Sapna Chaudhary ｜ Official Lyrical Video ｜ Vicky Kajla ｜ New Haryanvi Song 2026.mp3",
+    ),
+  },
+  {
+    title: "Chatak Matak Ke Mat Chale",
+    artist: "Haryanvi",
+    src: songPath("Chatak Matak Ke Mat Chale.mp3"),
+  },
+  {
+    title: "Chori Sun Scooty Wali",
+    artist: "Saifi",
+    src: songPath(
+      "Chori Sun Scooty wali   (saifi)   Latest Haryanvi Dj Song 2017.mp3",
+    ),
+  },
+  {
+    title: "Dhai Litar Dudh Gela",
+    artist: "NDJ Music",
+    src: songPath(
+      "Haryanvi song - Dhai Litar Dudh Gela 12 Tikkad - Rukka padgya ｜ NDJ Music ｜ Latest Haryanvi DJ Songs.mp3",
+    ),
+  },
+  {
+    title: "Kharbuja",
+    artist: "Masoom Sharma",
+    src: songPath(
+      "Kharbuja ｜｜ New Dj Song ｜｜ Latest Song ｜｜ Masoom Sharma ｜｜ Mor Music.mp3",
+    ),
+  },
+  {
+    title: "Laad Piya Ke",
+    artist: "Sapna Chaudhary & Pardeep Boora",
+    src: songPath(
+      "Laad Piya Ke - Sapna Choudhary New Song ｜ Pardeep Boora ｜ New Haryanvi Songs 2026.mp3",
+    ),
+  },
+  {
+    title: "Mahare Khet Me Jhotta Badh Diya",
+    artist: "Haryanvi",
+    src: songPath("Mahare Khet Me Jhotta Badh Diya.mp3"),
+  },
+  {
+    title: "Mouj Jamane Main",
+    artist: "Uttar Kumar, Renuka Panwar & Chandani",
+    src: songPath(
+      "Mouj Jamane Main Official Video ： Uttar Kumar ｜ Renuka Panwar ｜ Chandani ｜ Pardeep ｜ Haryanvi Song.mp3",
+    ),
+  },
+  {
+    title: "Mein Pariya Bargi Chhori",
+    artist: "Raju Punjabi & Pooja Hooda",
+    src: songPath(
+      "Raju Punjabi Song - Mein Pariya Bargi Chhori ｜ Pooja Hooda ｜ Janu Rakhi ｜ New Haryanvi Songs.mp3",
+    ),
+  },
+  {
+    title: "Teri Lat Lag Jagi",
+    artist: "Sapna Chaudhary, Rikky & Ruchika Jangid",
+    src: songPath(
+      "Sapna Chaudhary - Teri Lat Lag Jagi ｜ Rikky, Ruchika Jangid ｜ New Haryanvi Songs Haryanavi 2020.mp3",
+    ),
+  },
+  {
+    title: "Sun Chachi",
+    artist: "Gori Jawan Chaudhry Preshan & Samaya Singh",
+    src: songPath(
+      "Sun Chachi  ｜ Gori Jawan Chaudhry Preshan ｜ Samaya Singh  ｜ New Haryanvi Songs Haryanavi 2022.mp3",
+    ),
+  },
+  {
+    title: "Teri Kothi Main Banwadun",
+    artist: "DJ Remix",
+    src: songPath("Teri Kothi Main Banwadun (DJ Remix).mp3"),
+  },
+  {
+    title: "Tu Kikar Ka Ped Se Main Kele Ki Fali",
+    artist: "Anjali Raghav & Raju Punjabi",
+    src: songPath(
+      "Tu Kikar ka ped se main kele ki fali  - Anjali Raghav - Raju Punjabi -  Sarkaari Saand.mp3",
+    ),
+  },
+  {
+    title: "बलम मेरा मारे पैक भरके",
+    artist: "Samay Singh & Gori Jawan Chaudhry Preshan",
+    src: songPath(
+      "बलम मेरा मारे पैक भरके  ｜｜ Samay  Singh   ｜｜ Gori Jawan Chaudhry Preshan ｜｜ Chanda Video.mp3",
+    ),
+  },
 ];
