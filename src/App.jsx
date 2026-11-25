@@ -42,44 +42,134 @@ const BARTAN_NOTES = [
 ];
 const QUOTES = [
   // DJ ATTITUDE & DESI SWAG
-  { hi: "छोरे का नाम सुनते ही, गाम में सन्नाटा छा ज्या सै!", en: "One name, and the entire village goes silent." },
-  { hi: "भौकाल ऐसा काटो छोरे, धूल भी सलाम ठोके!", en: "Make such an impact that even dust salutes." },
-  { hi: "हमसे अकड़ के ना बोलिए, लहजा बदल देंगे!", en: "Don't test our attitude." },
-  { hi: "छोरा पश्चिम यूपी का, ठाठ पूरे नवाबां आले!", en: "West UP boy, royal attitude." },
-  { hi: "गाम छोटा हो सके सै, पर छोरे का रौला ना!", en: "Small village, massive reputation." },
-  { hi: "जिगरा चाहिए छोरे, सिर्फ मूंछ रखने से दबंग ना बनते!", en: "Being a legend takes guts." },
+  {
+    hi: "छोरे का नाम सुनते ही, गाम में सन्नाटा छा ज्या सै!",
+    en: "One name, and the entire village goes silent.",
+  },
+  {
+    hi: "भौकाल ऐसा काटो छोरे, धूल भी सलाम ठोके!",
+    en: "Make such an impact that even dust salutes.",
+  },
+  {
+    hi: "हमसे अकड़ के ना बोलिए, लहजा बदल देंगे!",
+    en: "Don't test our attitude.",
+  },
+  {
+    hi: "छोरा पश्चिम यूपी का, ठाठ पूरे नवाबां आले!",
+    en: "West UP boy, royal attitude.",
+  },
+  {
+    hi: "गाम छोटा हो सके सै, पर छोरे का रौला ना!",
+    en: "Small village, massive reputation.",
+  },
+  {
+    hi: "जिगरा चाहिए छोरे, सिर्फ मूंछ रखने से दबंग ना बनते!",
+    en: "Being a legend takes guts.",
+  },
 
   // GHAZIABAD / MEERUT STYLE RAULA
-  { hi: "मेरठ की धरती सै भाई, बातां में भी बारूद सै!", en: "Meerut attitude, explosive words." },
-  { hi: "रौला ऐसा सै अपना, DJ भी आवाज बढ़ा दे!", en: "Even the DJ turns up the volume." },
-  { hi: "छोरे की एंट्री होवे, तो भीड़ अपने आप हट ज्या सै!", en: "The crowd makes way automatically." },
-  { hi: "ना कोई दिखावा, ना कोई शोर, अपना नाम ही काफी सै छोरे!", en: "No show-off, the name says it all." },
-  { hi: "गाम के छोरे सैं, दिल में प्यार और आंखां में अंगार!", en: "Village boys, loving hearts and fiery eyes." },
-  { hi: "जहां खड़े हो जावें, वहीं माहौल बन ज्या सै!", en: "Where we stand, the party begins." },
+  {
+    hi: "मेरठ की धरती सै भाई, बातां में भी बारूद सै!",
+    en: "Meerut attitude, explosive words.",
+  },
+  {
+    hi: "रौला ऐसा सै अपना, DJ भी आवाज बढ़ा दे!",
+    en: "Even the DJ turns up the volume.",
+  },
+  {
+    hi: "छोरे की एंट्री होवे, तो भीड़ अपने आप हट ज्या सै!",
+    en: "The crowd makes way automatically.",
+  },
+  {
+    hi: "ना कोई दिखावा, ना कोई शोर, अपना नाम ही काफी सै छोरे!",
+    en: "No show-off, the name says it all.",
+  },
+  {
+    hi: "गाम के छोरे सैं, दिल में प्यार और आंखां में अंगार!",
+    en: "Village boys, loving hearts and fiery eyes.",
+  },
+  {
+    hi: "जहां खड़े हो जावें, वहीं माहौल बन ज्या सै!",
+    en: "Where we stand, the party begins.",
+  },
 
   // DESI ROMANCE & CHHORI
-  { hi: "छोरी तेरी चाल पे तो पूरा गाम फिदा हो रया सै!", en: "The whole village is crushing on your walk." },
-  { hi: "तेरी पायल की छन-छन, DJ की बीट पे भारी पड़गी!", en: "Your anklets beat the DJ bass." },
-  { hi: "घूंघट उठा के देख छोरी, छोरा दिल हार बैठ्या!", en: "Lift the veil, he's already lost his heart." },
-  { hi: "छोरी आंख मार गई, छोरे की अकड़ उतर गई!", en: "One wink and his attitude disappeared." },
-  { hi: "तेरे नखरे हजार छोरी, पर छोरा भी कम ना सै!", en: "A thousand tantrums, but he's no less." },
-  { hi: "गोरी तेरी कमर लचकती, DJ की बीट धड़कती!", en: "Your moves make the bassline pulse." },
+  {
+    hi: "छोरी तेरी चाल पे तो पूरा गाम फिदा हो रया सै!",
+    en: "The whole village is crushing on your walk.",
+  },
+  {
+    hi: "तेरी पायल की छन-छन, DJ की बीट पे भारी पड़गी!",
+    en: "Your anklets beat the DJ bass.",
+  },
+  {
+    hi: "घूंघट उठा के देख छोरी, छोरा दिल हार बैठ्या!",
+    en: "Lift the veil, he's already lost his heart.",
+  },
+  {
+    hi: "छोरी आंख मार गई, छोरे की अकड़ उतर गई!",
+    en: "One wink and his attitude disappeared.",
+  },
+  {
+    hi: "तेरे नखरे हजार छोरी, पर छोरा भी कम ना सै!",
+    en: "A thousand tantrums, but he's no less.",
+  },
+  {
+    hi: "गोरी तेरी कमर लचकती, DJ की बीट धड़कती!",
+    en: "Your moves make the bassline pulse.",
+  },
 
   // FUNNY & DOUBLE-MEANING DJ DIALOGUES
-  { hi: "खाट पे बैठ्या छोरा, सपना देखे रानी का!", en: "Village boy dreaming of royalty." },
-  { hi: "छोरी बोली धीरे नाच, छोरा बोल्या DJ और तेज कर!", en: "She says slow down, he says turn it up." },
-  { hi: "लुगाई का गुस्सा और DJ का बेस, दोनों सीधे दिल पे लागें!", en: "Her anger and the DJ bass hit hard." },
-  { hi: "ब्याह में आया था खाना खाणे, अब ठुमके मार रया सै!", en: "Came for the food, stayed for the dance." },
-  { hi: "चाचा ने पी ली लस्सी, अब नाचेंगे पूरी बस्ती!", en: "Uncle had his lassi, now the whole village dances." },
-  { hi: "घणी ठंड सै भाई, पर छोरे का डांस गरम सै!", en: "Cold weather, hot dance moves." },
+  {
+    hi: "खाट पे बैठ्या छोरा, सपना देखे रानी का!",
+    en: "Village boy dreaming of royalty.",
+  },
+  {
+    hi: "छोरी बोली धीरे नाच, छोरा बोल्या DJ और तेज कर!",
+    en: "She says slow down, he says turn it up.",
+  },
+  {
+    hi: "लुगाई का गुस्सा और DJ का बेस, दोनों सीधे दिल पे लागें!",
+    en: "Her anger and the DJ bass hit hard.",
+  },
+  {
+    hi: "ब्याह में आया था खाना खाणे, अब ठुमके मार रया सै!",
+    en: "Came for the food, stayed for the dance.",
+  },
+  {
+    hi: "चाचा ने पी ली लस्सी, अब नाचेंगे पूरी बस्ती!",
+    en: "Uncle had his lassi, now the whole village dances.",
+  },
+  {
+    hi: "घणी ठंड सै भाई, पर छोरे का डांस गरम सै!",
+    en: "Cold weather, hot dance moves.",
+  },
 
   // GAAM KA DABANGG
-  { hi: "खानदानी ठाठ सैं छोरे, किराये का भौकाल ना!", en: "Inherited class, not rented swagger." },
-  { hi: "अपना गाम, अपनी माटी, अपना अलग ही रौला!", en: "Our village, our soil, our identity." },
-  { hi: "पगड़ी का मान राखें, जुबान का वजन राखें!", en: "Respect the turban, honor your word." },
-  { hi: "बोलचाल देसी सै, पर अंदाज नवाबी सै!", en: "Desi language, royal style." },
-  { hi: "नाम ना पूछ छोरे का, गाम बता देगा!", en: "The village itself knows the name." },
-  { hi: "पश्चिम यूपी के छोरे, जहां खड़े हों वहीं मेला लग ज्या सै!", en: "West UP boys turn every place into a fair." },
+  {
+    hi: "खानदानी ठाठ सैं छोरे, किराये का भौकाल ना!",
+    en: "Inherited class, not rented swagger.",
+  },
+  {
+    hi: "अपना गाम, अपनी माटी, अपना अलग ही रौला!",
+    en: "Our village, our soil, our identity.",
+  },
+  {
+    hi: "पगड़ी का मान राखें, जुबान का वजन राखें!",
+    en: "Respect the turban, honor your word.",
+  },
+  {
+    hi: "बोलचाल देसी सै, पर अंदाज नवाबी सै!",
+    en: "Desi language, royal style.",
+  },
+  {
+    hi: "नाम ना पूछ छोरे का, गाम बता देगा!",
+    en: "The village itself knows the name.",
+  },
+  {
+    hi: "पश्चिम यूपी के छोरे, जहां खड़े हों वहीं मेला लग ज्या सै!",
+    en: "West UP boys turn every place into a fair.",
+  },
 ];
 const HARYANVI_NOTES = [
   "Beat drop hote hi energy double",
@@ -192,9 +282,7 @@ export default function App() {
   const activeSongs = theme === "haryanvi" ? haryanviSongs : songs;
   const currentSong = activeSongs[idx] ?? null;
   const nextSong =
-    activeSongs.length > 1
-      ? activeSongs[(idx + 1) % activeSongs.length]
-      : null;
+    activeSongs.length > 1 ? activeSongs[(idx + 1) % activeSongs.length] : null;
   const go = (i) => {
     if (activeSongs.length === 0) return;
     shouldPlay.current = true;
@@ -232,7 +320,9 @@ export default function App() {
         onLoadedMetadata={(e) => setDur(e.target.duration)}
         onEnded={() => go(idx + 1)}
       />
-      {nextSong && <audio src={nextSong.src} preload="auto" aria-hidden="true" />}
+      {nextSong && (
+        <audio src={nextSong.src} preload="auto" aria-hidden="true" />
+      )}
       <div className="shade" />
       {theme === "bartan" && (
         <>
@@ -333,7 +423,9 @@ export default function App() {
                   ? "Haryanvi Banger"
                   : "Corporate Majdoor"}
             </span>
-            <span className="theme-picker-chevron" aria-hidden="true">⌄</span>
+            <span className="theme-picker-chevron" aria-hidden="true">
+              ⌄
+            </span>
           </button>
           {themeMenuOpen && (
             <div className="theme-menu" role="menu" aria-label="Website themes">
@@ -402,15 +494,15 @@ export default function App() {
 
       <main className="hero">
         <h1>
-          {theme === "bartan"
-            ? "बर्तन TIME"
-            : theme === "haryanvi"
-              ? (
-                <>
-                  <span className="haryanvi-title-prefix">हरियाणवी</span> Bangers
-                </>
-              )
-              : "Corporate Majdoor"}
+          {theme === "bartan" ? (
+            "बर्तन TIME"
+          ) : theme === "haryanvi" ? (
+            <>
+              <span className="haryanvi-title-prefix">हरियाणवी</span> Bangers
+            </>
+          ) : (
+            "Corporate Majdoor"
+          )}
         </h1>
         {theme === "haryanvi" ? null : theme !== "bartan" ? (
           <p>9 to 5 ki Majdoori • Overtime Playlist</p>
@@ -421,12 +513,9 @@ export default function App() {
             className="bartan-quote-card"
             onClick={() => setDaant((d) => (d + 1) % BARTAN_DIALOGUES.length)}
           >
-            <span className="bartan-quote">
-              "{BARTAN_DIALOGUES[daant]}"
-            </span>
+            <span className="bartan-quote">"{BARTAN_DIALOGUES[daant]}"</span>
             <span className="bartan-speaker">
-              <i aria-hidden="true" />
-              — {BARTAN_SPEAKERS[daant]}
+              <i aria-hidden="true" />— {BARTAN_SPEAKERS[daant]}
             </span>
           </button>
         ) : theme === "haryanvi" ? null : (
@@ -439,7 +528,9 @@ export default function App() {
             >
               🤬 Boss Ki Daant
             </button>
-            <button onClick={() => setPanel(panel === "notes" ? null : "notes")}>
+            <button
+              onClick={() => setPanel(panel === "notes" ? null : "notes")}
+            >
               📝 Meeting Notes
             </button>
             <button className="red" onClick={() => setFake(true)}>
@@ -495,11 +586,15 @@ export default function App() {
             </output>
           </div>
           <div className="transport-controls">
-            <button onClick={() => go(idx - 1)} disabled={!currentSong}>⏮</button>
+            <button onClick={() => go(idx - 1)} disabled={!currentSong}>
+              ⏮
+            </button>
             <button className="play" onClick={toggle} disabled={!currentSong}>
               {playing ? "⏸" : "▶"}
             </button>
-            <button onClick={() => go(idx + 1)} disabled={!currentSong}>⏭</button>
+            <button onClick={() => go(idx + 1)} disabled={!currentSong}>
+              ⏭
+            </button>
             <button
               onClick={() => setPanel(panel === "list" ? null : "list")}
               aria-label={panel === "list" ? "Close playlist" : "Open playlist"}
@@ -560,9 +655,7 @@ export default function App() {
                 <p lang="en">{QUOTES[daant].en}</p>
               </>
             ) : (
-              <p>
-                “{(theme === "bartan" ? BARTAN_DIALOGUES : DAANT)[daant]}”
-              </p>
+              <p>“{(theme === "bartan" ? BARTAN_DIALOGUES : DAANT)[daant]}”</p>
             )}
             <button onClick={() => setPanel(null)}>
               {theme === "bartan"
@@ -592,18 +685,20 @@ export default function App() {
               <code>public/Haryanvi bangers</code> and register them in{" "}
               <code>src/haryanvi bangers.js</code>.
             </p>
-          ) : activeSongs.map((s, i) => (
-            <button
-              key={s.src}
-              className={i === idx ? "on" : ""}
-              onClick={() => {
-                go(i);
-                setPanel(null);
-              }}
-            >
-              {i + 1}. {title(i)}
-            </button>
-          ))}
+          ) : (
+            activeSongs.map((s, i) => (
+              <button
+                key={s.src}
+                className={i === idx ? "on" : ""}
+                onClick={() => {
+                  go(i);
+                  setPanel(null);
+                }}
+              >
+                {i + 1}. {title(i)}
+              </button>
+            ))
+          )}
         </aside>
       )}
 
@@ -611,7 +706,10 @@ export default function App() {
         <section id="about" className="info footer-about">
           {theme === "bartan" ? (
             <>
-              <h2>Welcome to Bartan Time — Kitchen-Chore Nostalgia, Rebuilt in Sound</h2>
+              <h2>
+                Welcome to Bartan Time — Kitchen-Chore Nostalgia, Rebuilt in
+                Sound
+              </h2>
               <p>
                 Bartan Time (बर्तन टाइम) is a free ambient radio built around
                 golden-hour light through the kitchen window, warm soapy water,
@@ -621,7 +719,10 @@ export default function App() {
               <div className="grid">
                 <div>
                   <h4>🫧 Golden-Hour Girly Vibes</h4>
-                  <p>Soft light, floating bubbles and cozy colors for a daily chore.</p>
+                  <p>
+                    Soft light, floating bubbles and cozy colors for a daily
+                    chore.
+                  </p>
                 </div>
                 <div>
                   <h4>💬 Bartan Dhone Ke Dialogues</h4>
@@ -644,11 +745,17 @@ export default function App() {
               <div className="grid">
                 <div>
                   <h4>🎧 Desi Energy</h4>
-                  <p>A punchy, high-energy visual theme for your listening sessions.</p>
+                  <p>
+                    A punchy, high-energy visual theme for your listening
+                    sessions.
+                  </p>
                 </div>
                 <div>
                   <h4>🤠 Desi Quotes</h4>
-                  <p>Haryanvi lines rotate above the player to keep the mood lively.</p>
+                  <p>
+                    Haryanvi lines rotate above the player to keep the mood
+                    lively.
+                  </p>
                 </div>
                 <div>
                   <h4>🏢 Free & No Login</h4>
@@ -662,11 +769,16 @@ export default function App() {
               <div className="grid">
                 <div>
                   <h4>🎧 Deep Work & Focus</h4>
-                  <p>Chill Bollywood and lo-fi for presentations, reports and overtime.</p>
+                  <p>
+                    Chill Bollywood and lo-fi for presentations, reports and
+                    overtime.
+                  </p>
                 </div>
                 <div>
                   <h4>📝 Doodles & Banter</h4>
-                  <p>Meeting notes, boss daant alerts and 5 PM tapri chai vibes.</p>
+                  <p>
+                    Meeting notes, boss daant alerts and 5 PM tapri chai vibes.
+                  </p>
                 </div>
                 <div>
                   <h4>🏢 Free & No Login</h4>
@@ -680,19 +792,38 @@ export default function App() {
           <h2>FAQ</h2>
           {theme === "bartan" ? (
             <>
-              <p><b>What is Bartan Time?</b> A cozy, golden-hour nostalgia radio for the dishes.</p>
-              <p><b>Is Bartan Time free?</b> Yes — free in your browser, with no sign-up.</p>
-              <p><b>What kind of music plays?</b> A curated nostalgic playlist of familiar songs.</p>
+              <p>
+                <b>What is Bartan Time?</b> A cozy, golden-hour nostalgia radio
+                for the dishes.
+              </p>
+              <p>
+                <b>Is Bartan Time free?</b> Yes — free in your browser, with no
+                sign-up.
+              </p>
+              <p>
+                <b>What kind of music plays?</b> A curated nostalgic playlist of
+                familiar songs.
+              </p>
             </>
           ) : theme === "haryanvi" ? (
             <>
-              <p><b>What is Haryanvi Banger?</b> A bold, Haryanvi-inspired theme for the music player.</p>
-              <p><b>Is it free?</b> Yes — free in your browser, with no sign-up.</p>
-              <p><b>Can I pick a track?</b> Yes, open the playlist using the list button.</p>
+              <p>
+                <b>What is Haryanvi Banger?</b> A bold, Haryanvi-inspired theme
+                for the music player.
+              </p>
+              <p>
+                <b>Is it free?</b> Yes — free in your browser, with no sign-up.
+              </p>
+              <p>
+                <b>Can I pick a track?</b> Yes, open the playlist using the list
+                button.
+              </p>
             </>
           ) : (
             <>
-              <p><b>Is it free?</b> Yes, no login needed. Just press play.</p>
+              <p>
+                <b>Is it free?</b> Yes, no login needed. Just press play.
+              </p>
               <small>All music rights belong to their respective owners.</small>
             </>
           )}
@@ -735,21 +866,22 @@ export default function App() {
                 : "● BUILD PASSING (98.4%) · click to exit"}
             </span>
           </div>
-          <pre>{theme === "bartan"
-            ? `SinkStatus: BARTAN DHUL RAHE HAIN
+          <pre>
+            {theme === "bartan"
+              ? `SinkStatus: BARTAN DHUL RAHE HAIN
 AmmaAlert: "Abhi tak start nahi kiya?"
 Move: plate --scrub--> shine
 Mood: golden-hour-soft
 
 [TERMINAL] Chore progress 98.4%... jaldi finish karo!`
-            : theme === "haryanvi"
-              ? `HaryanviBanger: LIVE
+              : theme === "haryanvi"
+                ? `HaryanviBanger: LIVE
 DesiMode: full-volume
 Energy: HIGH
 Mood: "Bass thoda aur tez kar!"
 
 [TERMINAL] Desi beats incoming... click to exit`
-            : `public class PaymentGatewayService implements HighPriorityService {
+                : `public class PaymentGatewayService implements HighPriorityService {
   private volatile boolean isOvertimeActive = true;
 
   public synchronized void executeCriticalPipeline(ExecutionContext ctx) {
@@ -759,7 +891,8 @@ Mood: "Bass thoda aur tez kar!"
     }
   }
 }
-[TERMINAL] compilation successful. Watching for file changes...`}</pre>
+[TERMINAL] compilation successful. Watching for file changes...`}
+          </pre>
         </div>
       )}
     </div>

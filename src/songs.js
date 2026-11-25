@@ -437,4 +437,19 @@ export const songs = [
     artist: " A.R Rahman ｜ Alka Yagnik ｜ Udit Narayan ",
     src: "/songs/Taal Se Taal Mila ｜ A.R Rahman ｜ Alka Yagnik ｜ Udit Narayan ｜ Taal (1999).mp3",
   },
+  {
+    title: "Meri Tarah Tum Bhi",
+    artist: "Alka Yagnik, Babul Suprio",
+    src: "/songs/Meri Tarah Tum Bhi - Lyrical ｜ Kya Yehi Pyaar Hai ｜ Alka Yagnik, Babul Suprio｜ Ameesha Patel, Aftab.mp3",
+  },
+  {
+    title: "Aap Ke Pyaar Mein Hum Savarne Lage",
+    artist: "Alka Yagnik ",
+    src: "/songs/Aap Ke Pyaar Mein Hum Savarne Lage ｜ Raaz ｜ Dino Morea, Malini Sharma, Alka Yagnik ｜ Romantic Song.mp3",
+  },
+  {
+    title: "Abhi To Mohabbat Ka",
+    artist: "Alka Yagnik ",
+    src: "/songs/Abhi To Mohabbat Ka -4K Video ｜Hum Ho Gaye Aap Ke｜ Apurva Agnihotri & Reema Sen ｜Hindi Romantic Song.mp3",
+  },
 ];
