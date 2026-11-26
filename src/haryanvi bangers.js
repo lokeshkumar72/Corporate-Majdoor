@@ -1,5 +1,5 @@
 const songPath = (filename) =>
-  `/Haryanvi%20bangers/${encodeURI(filename)}`;
+  `/Haryanvi%20bangers/${encodeURIComponent(filename)}`;
 
 export const haryanviSongs = [
   {
@@ -397,11 +397,6 @@ export const haryanviSongs = [
     title: "Tu Meri Jaan Se",
     artist: "Haryanvi",
     src: songPath("Tu Meri Jaan Se [128k].mp3"),
-  },
-  {
-    title: "Tu Meri Jaan Se",
-    artist: "Haryanvi",
-    src: songPath("Tu Meri Jaan Se.mp3"),
   },
   {
     title: "Edi Maar Ke Nachhi",
