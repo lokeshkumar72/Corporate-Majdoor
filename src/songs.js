@@ -452,4 +452,9 @@ export const songs = [
     artist: "Alka Yagnik ",
     src: "/songs/Abhi To Mohabbat Ka -4K Video ｜Hum Ho Gaye Aap Ke｜ Apurva Agnihotri & Reema Sen ｜Hindi Romantic Song.mp3",
   },
+  {
+    title: "Zindagi Ban Gaye Ho Tum",
+    artist: "Udit Narayan, Alka Yagnik ",
+    src: "/songs/Zindagi Ban Gaye Ho Tum (Full 4K Video Song) ｜ Udit Narayan, Alka Yagnik ｜ Kasoor Movie.mp3",
+  },
 ];
